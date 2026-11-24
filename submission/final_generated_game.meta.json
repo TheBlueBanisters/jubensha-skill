@@ -1,0 +1,18 @@
+{
+  "model": "qwen3.8-27b",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 8890,
+    "total_tokens": 20506,
+    "completion_tokens": 11616,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 8890
+    },
+    "completion_tokens_details": {}
+  },
+  "elapsed_sec": 155.7,
+  "reasoning_len": 0,
+  "chars": 40369,
+  "words": 6780
+}
