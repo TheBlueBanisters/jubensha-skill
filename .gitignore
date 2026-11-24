@@ -1,0 +1,13 @@
+# Secrets & local environment
+.env
+*.env
+.env.*
+
+# Python & OS artifacts
+__pycache__/
+*.py[cod]
+.DS_Store
+*.log
+
+# Local scratch & raw API logs
+scratch/
