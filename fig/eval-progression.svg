@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 460" width="1120" height="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1120" height="460" rx="16" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="560" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#0F172A">Jubensha-Generator: Iterative Evaluation &amp; Cross-Model Portability</text>
+  <text x="560" y="60" text-anchor="middle" font-size="12.5" fill="#64748B">Blind 30-Point Rubric Scoring (B1–B6) by Independent Judge (qwen3.8-max, temp = 0.1)</text>
+
+  <!-- Left Card: Panel A -->
+  <rect x="24" y="80" width="524" height="356" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="44" y="108" font-size="14" font-weight="700" fill="#1E293B">A. Total Score Progression (v1 → v2 → v3 Final)</text>
+
+  <!-- Panel A Gridlines (y=360 is 0, y=150 is 30 -> 7px per pt) -->
+  <g stroke="#F1F5F9" stroke-width="1">
+    <line x1="72" y1="150" x2="528" y2="150"/>
+    <line x1="72" y1="185" x2="528" y2="185"/>
+    <line x1="72" y1="220" x2="528" y2="220"/>
+    <line x1="72" y1="255" x2="528" y2="255"/>
+    <line x1="72" y1="290" x2="528" y2="290"/>
+    <line x1="72" y1="325" x2="528" y2="325"/>
+  </g>
+  <line x1="72" y1="360" x2="528" y2="360" stroke="#CBD5E1" stroke-width="1.2"/>
+
+  <!-- Panel A Y Labels -->
+  <g font-size="11" fill="#64748B" text-anchor="end">
+    <text x="64" y="154">30</text>
+    <text x="64" y="189">25</text>
+    <text x="64" y="224">20</text>
+    <text x="64" y="259">15</text>
+    <text x="64" y="294">10</text>
+    <text x="64" y="329">5</text>
+    <text x="64" y="364">0</text>
+  </g>
+
+  <!-- Group 1: 4p Lighthouse (v1=24, v2=21) -->
+  <rect x="96" y="192" width="26" height="168" rx="4" fill="#94A3B8"/>
+  <text x="109" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#475569">24</text>
+  <rect x="126" y="213" width="26" height="147" rx="4" fill="#6366F1"/>
+  <text x="139" y="207" text-anchor="middle" font-size="11" font-weight="700" fill="#4338CA">21</text>
+  <text x="124" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">4p Lighthouse</text>
+  <text x="124" y="392" text-anchor="middle" font-size="10" fill="#64748B">Easy • 1998</text>
+
+  <!-- Group 2: 5p Ferry (v1=17, v2=25, v3=25 Submitted) -->
+  <rect x="196" y="241" width="26" height="119" rx="4" fill="#94A3B8"/>
+  <text x="209" y="235" text-anchor="middle" font-size="11" font-weight="700" fill="#475569">17</text>
+  <rect x="226" y="185" width="26" height="175" rx="4" fill="#6366F1"/>
+  <text x="239" y="179" text-anchor="middle" font-size="11" font-weight="700" fill="#4338CA">25</text>
+  <rect x="256" y="185" width="26" height="175" rx="4" fill="#10B981"/>
+  <text x="269" y="179" text-anchor="middle" font-size="11" font-weight="700" fill="#047857">25</text>
+  <rect x="234" y="144" width="72" height="22" rx="11" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+  <text x="270" y="159" text-anchor="middle" font-size="9.5" font-weight="700" fill="#047857">Submitted ★</text>
+  <text x="239" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">5p Ferry</text>
+  <text x="239" y="392" text-anchor="middle" font-size="10" fill="#64748B">Med • 2020s</text>
+
+  <!-- Group 3: 6p Antarctic (v1=18, v2=21, v3=23 DeepSeek) -->
+  <rect x="318" y="234" width="26" height="126" rx="4" fill="#94A3B8"/>
+  <text x="331" y="228" text-anchor="middle" font-size="11" font-weight="700" fill="#475569">18</text>
+  <rect x="348" y="213" width="26" height="147" rx="4" fill="#6366F1"/>
+  <text x="361" y="207" text-anchor="middle" font-size="11" font-weight="700" fill="#4338CA">21</text>
+  <rect x="378" y="199" width="26" height="161" rx="4" fill="#0EA5E9"/>
+  <text x="391" y="193" text-anchor="middle" font-size="11" font-weight="700" fill="#0369A1">23</text>
+  <rect x="355" y="158" width="74" height="22" rx="11" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1"/>
+  <text x="392" y="173" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0369A1">DeepSeek v4</text>
+  <text x="361" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">6p Antarctic</text>
+  <text x="361" y="392" text-anchor="middle" font-size="10" fill="#64748B">Hard • 2048</text>
+
+  <!-- Group 4: 4p Alpine Train Unseen (v3=21) -->
+  <rect x="462" y="213" width="28" height="147" rx="4" fill="#10B981"/>
+  <text x="476" y="207" text-anchor="middle" font-size="11" font-weight="700" fill="#047857">21</text>
+  <rect x="444" y="172" width="64" height="22" rx="11" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+  <text x="476" y="187" text-anchor="middle" font-size="9.5" font-weight="700" fill="#047857">Unseen Sim</text>
+  <text x="476" y="378" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">4p Train</text>
+  <text x="476" y="392" text-anchor="middle" font-size="10" fill="#64748B">Hard • 1987</text>
+
+  <!-- Panel A Legend -->
+  <g font-size="10.5" fill="#475569">
+    <rect x="72" y="410" width="11" height="11" rx="2" fill="#94A3B8"/>
+    <text x="88" y="420">v1 (27B)</text>
+    <rect x="150" y="410" width="11" height="11" rx="2" fill="#6366F1"/>
+    <text x="166" y="420">v2 (27B)</text>
+    <rect x="228" y="410" width="11" height="11" rx="2" fill="#10B981"/>
+    <text x="244" y="420">v3 Final (Qwen)</text>
+    <rect x="346" y="410" width="11" height="11" rx="2" fill="#0EA5E9"/>
+    <text x="362" y="420">v3 Portability (DeepSeek)</text>
+  </g>
+
+  <!-- Right Card: Panel B -->
+  <rect x="572" y="80" width="524" height="356" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="592" y="108" font-size="14" font-weight="700" fill="#1E293B">B. Per-Criterion Breakdown (% of Max Score)</text>
+
+  <!-- Panel B Gridlines (x=700 is 0%, x=1040 is 100% -> 3.4px per %) -->
+  <g stroke="#F1F5F9" stroke-width="1">
+    <line x1="785" y1="130" x2="785" y2="380"/>
+    <line x1="870" y1="130" x2="870" y2="380"/>
+    <line x1="955" y1="130" x2="955" y2="380"/>
+    <line x1="1040" y1="130" x2="1040" y2="380"/>
+  </g>
+  <line x1="700" y1="130" x2="700" y2="380" stroke="#CBD5E1" stroke-width="1.2"/>
+
+  <!-- B1 Theme (/5): v1=80%, v3_sub=100%, v3_ds=100% -->
+  <text x="690" y="156" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B1 Theme (/5)</text>
+  <rect x="700" y="138" width="340" height="11" rx="3" fill="#10B981"/>
+  <text x="1046" y="147" font-size="10.5" font-weight="700" fill="#047857">100%</text>
+  <rect x="700" y="151" width="340" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="161" width="272" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- B2 Constraints (/5): v1=67%, v3_sub=80%, v3_ds=80% -->
+  <text x="690" y="198" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B2 Constr. (/5)</text>
+  <rect x="700" y="180" width="272" height="11" rx="3" fill="#10B981"/>
+  <text x="978" y="189" font-size="10.5" font-weight="700" fill="#047857">80%</text>
+  <rect x="700" y="193" width="272" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="203" width="227" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- B3 Consistency (/7): v1=52%, v3_sub=71%, v3_ds=57% -->
+  <text x="690" y="240" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B3 Consist. (/7)</text>
+  <rect x="700" y="222" width="243" height="11" rx="3" fill="#10B981"/>
+  <text x="949" y="231" font-size="10.5" font-weight="700" fill="#047857">71%</text>
+  <rect x="700" y="235" width="194" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="245" width="178" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- B4 Solvability (/5): v1=60%, v3_sub=80%, v3_ds=60% -->
+  <text x="690" y="282" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B4 Solv. (/5)</text>
+  <rect x="700" y="264" width="272" height="11" rx="3" fill="#10B981"/>
+  <text x="978" y="273" font-size="10.5" font-weight="700" fill="#047857">80%</text>
+  <rect x="700" y="277" width="204" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="287" width="204" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- B5 Playability (/5): v1=73%, v3_sub=80%, v3_ds=80% -->
+  <text x="690" y="324" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B5 Play. (/5)</text>
+  <rect x="700" y="306" width="272" height="11" rx="3" fill="#10B981"/>
+  <text x="978" y="315" font-size="10.5" font-weight="700" fill="#047857">80%</text>
+  <rect x="700" y="319" width="272" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="329" width="249" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- B6 Narrative (/3): v1=67%, v3_sub=100%, v3_ds=100% -->
+  <text x="690" y="366" text-anchor="end" font-size="11" font-weight="600" fill="#334155">B6 Narr. (/3)</text>
+  <rect x="700" y="348" width="340" height="11" rx="3" fill="#10B981"/>
+  <text x="1046" y="357" font-size="10.5" font-weight="700" fill="#047857">100%</text>
+  <rect x="700" y="361" width="340" height="8" rx="3" fill="#0EA5E9" opacity="0.85"/>
+  <rect x="700" y="371" width="227" height="7" rx="3" fill="#94A3B8"/>
+
+  <!-- X axis labels -->
+  <g font-size="10" fill="#64748B" text-anchor="middle">
+    <text x="700" y="396">0%</text>
+    <text x="785" y="396">25%</text>
+    <text x="870" y="396">50%</text>
+    <text x="955" y="396">75%</text>
+    <text x="1040" y="396">100%</text>
+  </g>
+
+  <!-- Panel B Legend -->
+  <g font-size="10.5" fill="#475569">
+    <rect x="615" y="410" width="11" height="11" rx="2" fill="#10B981"/>
+    <text x="631" y="420">v3 Submitted (qwen3.8-flash)</text>
+    <rect x="795" y="410" width="11" height="11" rx="2" fill="#0EA5E9"/>
+    <text x="811" y="420">v3 Portability (DeepSeek)</text>
+    <rect x="960" y="410" width="11" height="11" rx="2" fill="#94A3B8"/>
+    <text x="976" y="420">v1 Mean</text>
+  </g>
+</svg>

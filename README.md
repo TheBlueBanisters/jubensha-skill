@@ -28,20 +28,9 @@
 
 ## 🏗️ Seven-Stage Generation Pipeline
 
-```mermaid
-flowchart TD
-    IN["Structured User Input<br/>(3 Theme Items, 4–6 Players, Setting & Optional Fields)"]
-    S1["<b>Stage 1 — Input & Theme Gate</b><br/>Parse defaults, atomic constraint table, bind 3 themes to Clue IDs"]
-    S2["<b>Stage 2 — Canonical Truth & Space-Time Matrix</b><br/>Lock 1 fixed truth, physical states & Time × Player Location Matrix"]
-    S3["<b>Stage 3 — Cast & Conflict Web</b><br/>N non-filler roles, directional ties (A → B), secrets & objectives"]
-    S4["<b>Stage 4 — Clues, Red Herrings & Info Boundaries</b><br/>8/10/12 clues, Anti-Spoiler Gate, 1-to-1 [DELIBERATE LIE] registry"]
-    S5["<b>Stage 5 — Multi-Ending & DM Scoring Rules</b><br/>3–4 mutually exclusive IF/THEN endings + objective pass table"]
-    S6["<b>Stage 6 — Playable Package Drafting</b><br/>Overview, DM Guide, Clues, Final Solution & Character Booklets"]
-    S7["<b>Stage 7 — Evidence-Cited 15-Point Audit</b><br/>Quote Ledger vs. Downstream Text & apply Hierarchy of Authority"]
-    OUT["<b>Complete Playable Jubensha Package (Parts 1–7)</b>"]
-
-    IN --> S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> OUT
-```
+<div align="center">
+  <img src="fig/pipeline-architecture.jpg" alt="Jubensha-Generator: Ledger-First 7-Stage LLM Skill Pipeline" width="100%" />
+</div>
 
 ---
 
@@ -101,6 +90,10 @@ special_requirements: No player is a police officer or professional detective. A
 ## 📊 Iterative Evaluation & Cross-Model Portability
 
 Every version (**v1 → v2 → v3**) was evaluated across diverse player counts (`4–6`), eras (`1987`, `1998`, `2020s`, `2048`), tones, and conflict types using a strict 30-point rubric evaluator (`qwen3.8-max`, temperature `0.1`).
+
+<div align="center">
+  <img src="fig/eval-progression.svg" alt="Iterative Evaluation and Cross-Model Portability" width="100%" />
+</div>
 
 | Run | Skill | Model | Scenario Profile | Theme (/5) | Constr. (/5) | Consist. (/7) | Solv. (/5) | Play. (/5) | Narr. (/3) | Total (/30) |
 | :--- | :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
